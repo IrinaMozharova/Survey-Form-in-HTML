@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+html,
+body {
+  background-color: #FCC3D3;
+  text-align: center;
+ font-family: 'Roboto Mono', Helvetica, monospace;
+  min-width: 320px;
+}
+
+#form-out {
+  background-color: #C3FAFC;
+  margin: auto;
+  border-radius: 40px;
+  width: 50%;
+  max-width: 800px;
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 45%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 20px;
+  width: 250px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+}
+
+.userAnswer,
+input[type="checkbox"] {
+  float: left;
+  margin-right: 10px;
+}
+
+#submit {
+  background-color: #FCB1C6;
+  border-radius: 24px;
+  color: C3FAFC;
+  font-size: 17px;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.dropdown {
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 22px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  right: 45px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .rightTab {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+  select {
+    width: 100%;
+  }
+}
