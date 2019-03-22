@@ -1,0 +1,108 @@
+<html>
+<head>
+        <link rel="stylesheet" href="style.css" />
+        
+    </head>
+<body>
+  <h1 id="title">Survey Form</h1>
+<div id="form-out">
+    <p id="description">Please answer these general coding questions</p>
+  <form id="survey-form"> 
+    <div class="rowTab">
+    <div class="labels">
+    <label for="Full-name" id="name-label">*Full Name</label>
+    </div>
+    <div class="rightTab">
+    <input id="name" type="text" name="FullName" placeholder="enter your name" class="input-field" required>
+    </div>
+    </div>
+    
+    <div class="rowTab">
+    <div class="labels">
+    <label for="e-mail" id="email-label">
+      *E-mail</label>
+    </div>
+    
+    <div class="rightTab">
+      <input id="email" type="email" placeholder="enter your e-mail" required class="input-field">
+    </div>
+    </div>
+    
+    <div class="rowTab">
+    <div class="labels">
+    <label for="numbers" id="number-label"> *Age</label>
+    </div>
+    <div class="rightTab">
+    <input id="number" type="number" placeholder="your age" required min="1" max="100" class="input-field">
+    </div>
+    </div>
+    
+    <div class="rowTab">
+    <div class="labels">
+    <label for="selection" id="selection-label">Which option best describes your current position?</label>
+    </div>
+    <div class="rightTab">
+    <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option value="developer">Developer</option>
+      <option value="designer">Designer</option>
+      <option value="teacher">Teacher</option>
+      <option value="other">Other</option>
+      </select>
+    </div>
+    </div>
+    
+   
+    
+    <div class="rowTab">
+    <div class="labels">
+    <label name="expirience" for="expirience">How long have you been coding?</label>
+    </div>
+     <div class="rightTab">
+      <ul style="list-style: none;">
+          <li class="radio"><label>1 year<input name="radio-buttons" value="1"  type="radio" class="userAnswer" ></label></li>
+          <li class="radio"><label>3 years<input name="radio-buttons" value="3"  type="radio" class="userAnswer" ></label></li>
+          <li class="radio"><label>5+ years<input name="radio-buttons" value="5"  type="radio" class="userAnswer" ></label></li>
+        </ul>
+      </div>
+      </div>
+    
+     
+      
+    <div class="rowTab">
+   <div class="labels">
+    <label name="check">Please check all languages you use (check all that apply):</label>
+    </div>
+    <div class="rightTab">
+      
+      <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="exp" value="1" type="checkbox" class="userExp">C++</label></li>
+        <li class="checkbox"><label><input name="exp" value="2" type="checkbox" class="userExp">C#</label></li>
+      <li class="checkbox"><label><input name="exp" value="3" type="checkbox" class="userExp">JavaScript</label></li>
+         <li class="checkbox"><label><input name="exp" value="4" type="checkbox" class="userExp">PHP</label></li>
+     <li class="checkbox"><label><input name="exp" value="5" type="checkbox" class="userExp">Python</label></li>   
+         </ul>
+      </div>
+      </div>
+    
+    <div class="rowTab">
+     <div class="labels">
+    <label for="text">Please let us know if you have any additional comments:</label>
+    </div>
+    <div class="rightTab">
+    <textarea class="input-field" id="comments" class="input-field" style="height:50px"  name="comment" placeholder="   Enter your comment here..."></textarea> 
+    </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+     </form>
+</div>
+</body>
+    
+   </html> 
+
+      
+        
+           
+           
+           
+    
